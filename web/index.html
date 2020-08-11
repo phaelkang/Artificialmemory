@@ -6,87 +6,132 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
       table {width: 550px;}
-      Body {font-family: 'Roboto', sans-serif; font-size: 13pt; line-height: 1.4}
-      tr.a {font-family: 'Roboto', sans-serif; font-weight: 700; line-height: 3}
-      #container1 {
-        width: 650px;
-        margin-left: 20px auto;
-        padding-top: 20px;
-        padding-left: 20px;
+      body {font-family: 'Roboto', sans-serif; font-size: 120%; line-height: 1.4}
+      p.a {font-family: 'Roboto', sans-serif; font-weight: 700; line-height: 1}
+      #body_Container {
+        width: 700px;
+        padding: 20px;
+        margin-right: auto;
         border: 0px solid #000000;
       }
+      #body_head {
+        padding: auto;
+        margin-bottom: 100px;
+        border: 0px solid #000000;
+      }
+      #body_column1 {
+        width: 160px;
+        padding: auto;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        float: left;
+        border: 0px solid #000000;
+      }
+      #body_column2 {
+        width: 180px;
+        padding: auto;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        float: left;
+        border: 0px solid #000000;
+      }
+      #body_column3 {
+        width: 180px;
+        padding: auto;
+        margin-bottom: 30px;
+        float: left;
+        border: 0px solid #000000;
+      }
+      #body_text {
+        clear: both;
+        padding: auto;
+        border: 0px solid #000000;
+        margin-bottom: 20px;
+      }
+      #body_footer {
+        clear: both;
+        padding: auto;
+        border: 0px solid #000000;
+      }
+      @media ( max-width: 480px ) {
+      #body_Container {
+        width: auto;
+      }
+      #body_head {
+        float: none;
+        width: auto;
+      }
+      #body_text {
+        float: none;
+        width: auto;
+      }
+      #body_footer {
+        float: none;
+        width: auto;
+      }
+    }
     </style>
   </head>
-
   <body>
-    <div id="container1">
-    <img src="img/logo.png" width="300px">
-    <br>
-    <p>
-      Artificial Memory(AM) Creative studio based in Seoul, was founded in 2020.
-      <br>We offer design and communication consultancy for clients from all fields of interest to create original works within the scope of art, brand, and design.
-    </p>
-  <br>
-  <br>
-    <table>
-      <thead>
-        <tr class="a">
-          <td>Creative Direction</td>
-          <td>Branding</td>
-          <td>Production</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Visual Identity</td>
-          <td>Brand Strategy</td>
-          <td>Product Design</td>
-        </tr>
-        <tr>
-          <td>Art Direction</td>
-          <td>Identity Design</td>
-          <td>Editorial Design</td>
-        </tr>
-        <tr>
-          <td>Graphic Design</td>
-          <td>Experience Design</td>
-          <td>Packaging</td>
-        </tr>
-        <tr>
-          <td>Type Design</td>
-          <td>Brand Guideline</td>
-          <td>2D/3D Artwork</td>
-        </tr>
-        <tr>
-          <td>Space</td>
-          <td></td>
-          <td>Web design</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td>Photography</td>
-        </tr>
-      </tbody>
-    </table>
-  </p>
-  </body>
+    <div id="body_Container">
+      <div id="body_head">
+        <img src="img/logo.png" width="300px">
+        <br>
+        <p>
+          Artificial Memory(AM) Creative studio based in Seoul, was founded in 2020.
+          <br>We offer design and communication consultancy for clients from all fields of interest to create original works within the scope of art, brand, and design.
+        </p>
+      </div>
+        <div id="body_column1">
+        <p class="a">
+          Creative Direction <br>
+        </p>
+        <p>
+          Visual Identity <br>
+          Art Direction <br>
+          Graphic Design <br>
+          Type Design <br>
+          Space <br>
+        </p>
+      </div>
+        <div id="body_column2">
+        <p class="a">
+          Branding <br>
+        </p>
+        <p>
+          Brand Strategy <br>
+          Identity Deisgn <br>
+          Experience Design <br>
+          Brand Guide line <br>
+        </p>
+      </div>
+        <div id="body_column3">
+        <p class="a">
+          Production <br>
+        </p>
+        <p>
+          Product Design <br>
+          Editorial Design <br>
+          Packaging <br>
+          2D/3D Artwork <br>
+          Web design <br>
+          Photography <br>
+        </p>
+      </div>
+      <div id="body_text">
+        Web Page Progress :
+        <progress value="3" max="100" draggable="auto"></progress><br>
+      </div>
+    </body>
 
-  <br>
-  <p>
-    Web Page Progress :
-    <progress value="3" max="100" draggable="auto"></progress><br>
-  </p>
-  <br>
-
-  <footer>
-    <p>
-			e-mail : info@am-studio.kr<br>
-			adress : 1F, 24, Hoenamu-ro 26-gil, Yongsan-gu, Seoul, KR<br>
-			instagram : <a href="https://www.instagram.com/am.artificialmemory/" target="_blank">@aa.artificialmemory</a><br>
-      <br>
-      ©2020 Artificial Memory.
-		</p>
-  </footer>
+    <footer>
+      <div id="body_footer">
+      	e-mail : info@am-studio.kr<br>
+  			adress : 1F, 24, Hoenamu-ro 26-gil, Yongsan-gu, Seoul, KR<br>
+  			instagram : <a href="https://www.instagram.com/am.artificialmemory/" target="_blank">@aa.artificialmemory</a><br>
+        <br>
+        ©2020 Artificial Memory.
+    </div>
+    </footer>
   </div>
 </html>
